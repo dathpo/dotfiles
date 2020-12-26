@@ -4,8 +4,8 @@
 # device; this may be used with UUID= as a more robust way to name devices
 # that works even if disks are added and removed. See fstab(5).
 #
-# <file system> <mount point>   <type>  <options>       <dump>  <pass>
-# / was on /dev/sda6 during installation
-UUID=c70a7da6-efb1-4836-9ae2-5c2998382759 /               ext4    errors=remount-ro 0       1
-# swap was on /dev/sda5 during installation
-UUID=689070b8-4318-474a-b05a-055a999feaad none            swap    sw              0       0
+# <file system>                              <mount point>       <type>  <options>                                  <dump>  <pass>
+UUID=c70a7da6-efb1-4836-9ae2-5c2998382759    /                   ext4    errors=remount-ro                          0       1
+UUID=689070b8-4318-474a-b05a-055a999feaad    none                swap    sw                                         0       0
+UUID=E6B234CFB234A5C9                        /media/david/Data   ntfs    uid=1000,gid=1000,umask=0022,auto,rw       0       0         
+UUID=3E200FD7200F9555                        /media/david/Extra  ntfs    uid=1000,gid=1000,umask=0022,auto,rw       0       0         
