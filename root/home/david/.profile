@@ -26,9 +26,12 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
- export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
-fi
+export ANDROID_HOME=$HOME/Android/Sdk
 
 # set env. variable for home dir on Data drive
 export DATA_HOME="/media/david/Data/David"
+
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$HOME/flutter/bin:$PATH"
+export PATH="$HOME/flutter/.pub-cache/bin:$PATH"
