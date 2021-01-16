@@ -17,6 +17,3 @@ mkdir -p $target_path
 mv $file $target_path
 echo "Creating symlink for $file_path"
 ln -s "$target_path/$filename" "$origin_path/$filename"
-
-
-
