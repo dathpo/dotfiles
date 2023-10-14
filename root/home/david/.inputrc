@@ -1,0 +1,4 @@
+# Navigate through words with arrow keys and backspace
+"\e[1;5C": forward-word   # Control + Right arrow
+"\e[1;5D": backward-word  # Control + Left arrow
+"\C-H": unix-word-rubout
