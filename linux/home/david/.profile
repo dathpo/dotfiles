@@ -35,3 +35,4 @@ export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
 export PATH="$HOME/flutter/bin:$PATH"
 export PATH="$HOME/flutter/.pub-cache/bin:$PATH"
+export PATH=$PATH:/home/david/go/bin
