@@ -56,15 +56,6 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "colorScheme": "Campbell",
-                "commandline": "gsudo pwsh.exe",
-                "guid": "{ac4a69a9-b639-45d3-918d-a09dec6973c0}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/pwsh.png",
-                "name": "PowerShell (Administrator)",
-                "startingDirectory": "%USERPROFILE%"
-            },
-            {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
                 "name": "Ubuntu 22.04",
@@ -74,27 +65,6 @@
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
-            },
-            {
-                "altGrAliasing": true,
-                "antialiasingMode": "grayscale",
-                "closeOnExit": "automatic",
-                "colorScheme": "Campbell",
-                "commandline": "gsudo cmd.exe",
-                "cursorShape": "bar",
-                "font": 
-                {
-                    "face": "Cascadia Mono"
-                },
-                "guid": "{d4c42737-797d-4248-bc55-7046494a013d}",
-                "hidden": false,
-                "historySize": 9001,
-                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
-                "name": "Command Prompt (Administrator)",
-                "padding": "8, 8, 8, 8",
-                "snapOnInput": true,
-                "startingDirectory": "%USERPROFILE%",
-                "useAcrylic": false
             },
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
