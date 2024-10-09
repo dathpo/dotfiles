@@ -1,11 +1,21 @@
-# /etc/fstab: static file system information.
-#
-# Use 'blkid' to print the universally unique identifier for a
-# device; this may be used with UUID= as a more robust way to name devices
-# that works even if disks are added and removed. See fstab(5).
-#
-# <file system>                              <mount point>       <type>  <options>                                  <dump>  <pass>
-UUID=c70a7da6-efb1-4836-9ae2-5c2998382759    /                   ext4    errors=remount-ro                          0       1
-UUID=689070b8-4318-474a-b05a-055a999feaad    none                swap    sw                                         0       0
-UUID=E6B234CFB234A5C9                        /media/david/Data   ntfs    uid=1000,gid=1000,umask=0022,auto,rw       0       0         
-UUID=3E200FD7200F9555                        /media/david/Extra  ntfs    uid=1000,gid=1000,umask=0022,auto,rw       0       0         
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda6
+UUID=c1815bc0-aefe-4a68-8a93-7d7ae5fbd46c    /         	         ext4    rw,relatime                                                                                              0    1
+
+# /dev/sdb1 LABEL=SYSTEM
+UUID=D08A-8625      	                     /boot               vfat    rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro    0    2
+
+# /dev/sdb5
+UUID=cc49404b-5eed-4cd7-91d1-842d7e1d561c    none                swap    defaults  	                                                                                          0    0
+
+# /dev/sda1
+UUID=241392AF1B303DE7                        /media/david/Data   ntfs    uid=1000,gid=1000,umask=0022,auto,rw                                                                     0    0         
+
+# /dev/sdc2
+UUID=3E200FD7200F9555                        /media/david/Extra  ntfs    uid=1000,gid=1000,umask=0022,auto,rw                                                                     0    0
+
+# /dev/nvme0n1p1
+UUID=04B7BE0A6816852F                        /media/david/Rocket ntfs    uid=1000,gid=1000,umask=0022,auto,rw                                                                     0    0
