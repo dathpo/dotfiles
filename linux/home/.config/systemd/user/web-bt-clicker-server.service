@@ -1,0 +1,12 @@
+[Unit]
+Description=Python HTTP Server for HTML (User Service)
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -m http.server 8080 --directory /media/david/Data/David/Code/web-bt-clicker/web_app
+WorkingDirectory=/media/david/Data/David/Code/web-bt-clicker/web_app
+Restart=always
+
+[Install]
+WantedBy=default.target
+
