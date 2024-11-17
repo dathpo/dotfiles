@@ -6347,7 +6347,14 @@
                         "description": "Map Ctrl+Shift+L to Cmd+Shift+G in Finder (Go to Folder)",
                         "manipulators": [
                             {
-                                "type": "basic",
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.apple.finder$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -6369,14 +6376,7 @@
                                         ]
                                     }
                                 ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "^com.apple.finder$"
-                                        ]
-                                    }
-                                ]
+                                "type": "basic"
                             }
                         ]
                     },
@@ -6384,7 +6384,14 @@
                         "description": "Use Delete as Move to Trash",
                         "manipulators": [
                             {
-                                "type": "basic",
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.apple.finder"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "delete_forward",
                                     "modifiers": {
@@ -6401,14 +6408,7 @@
                                         ]
                                     }
                                 ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "^com.apple.finder"
-                                        ]
-                                    }
-                                ]
+                                "type": "basic"
                             }
                         ]
                     }
